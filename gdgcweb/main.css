@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#body-css{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 0;
+}
+
+h1 {
+    text-align: left;
+    padding-left: 65px;
+}
+header{
+    padding: 10px;
+    margin: 0%;
+    background-color: #333;
+}
+
+#search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 300px;
+    transition: transform 0.5s ease;
+
+}
+
+#product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: transform 5s ease, box-shadow 0.5s ease; /* Add smooth transitions for hover effects */
+
+}
+
+.product:hover {
+transform: scale(1.03); /* Enlarge the image slightly on hover */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+
+.product {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.5s ease;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.product h3 {
+    min-height: 40px; /* Ensure all product titles have consistent height */
+    overflow-wrap: break-word; /* Wrap long product names */
+}
+
+.add-to-cart-btn {
+    margin-top: auto; /* Ensure "Add to Cart" button aligns at the bottom */
+}
+
+.cart-item {
+    background-color: #eee;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart {
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: auto;
+}
+
+.cart-item-details {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.cart-item-details h4 {
+    margin: 0;
+    font-size: 16px;
+    word-wrap: break-word; /* Wrap product name to the next line if too long */
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+.price-details {
+background-color: #f9f9f9;
+padding: 20px;
+margin-top: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+font-size: 16px;
+color: #333;
+font-family: 'Arial', sans-serif;
+}
+
+.price-details p {
+display: flex;
+justify-content: space-between;
+margin: 10px 0;
+font-weight: bold;
+}
+
+.price-details p span {
+color: #ff5722; /* Make the prices stand out with a different color */
+}
+
+.price-details p#total-amount {
+font-size: 38px;
+color: #00796b; /* Highlight the total amount in a unique color */
+font-weight: bold;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05); 
+    background-color: #555;
+}
+#remove-btn{
+    background-color: rgba(255, 0, 0, 0.594);
+}
+#remove-btn:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-control button {
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.quantity-control span {
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+/* Added to cart notification styling */
+#cart-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #44ab47;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.product img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Ensure the image takes up the block space */
+    /* border-radius: 10px;  */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transitions for hover effects */
+}
+
+.product img:hover {
+    transform: scale(1.05); /* Enlarge the image slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+}
+
+
+
+#search-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#search-button a{
+    position: relative;
+    width: 130px;
+    height: 35px;
+    display: inline-block;
+    background: #fff;
+    margin: 20px;
+}
+#search-button a:before,
+#search-button a:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    transition: 0.5s;
+    background: #f00;
+}
+#search-button a:before,
+#search-button a:after {
+    background: linear-gradient(45deg, #00ccff, #0e1538, #d400d4);
+}
+#search-button a:hover:before {
+    inset: -3px;  
+}
+#search-button a:hover:after {
+    inset: -3px;  
+    filter: blur(10px);
+}
+#search-button a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background: #0e1538;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    border: 1px solid #040a29;
+    overflow: hidden;
+}
+#search-button a span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.075);
+    transform: skew(25deg);
+}

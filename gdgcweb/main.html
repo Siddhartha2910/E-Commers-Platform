@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Platform</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+    <h1 style="color: white;">E-Commerce Platform</h1>
+    </header>
+    <!-- Search Bar -->
+<div id="body-css">
+    <div id="search-bar">
+        <input type="text" id="search-input" placeholder="Search products...">
+        <button id="search-button" style="margin: auto; padding: 0%; margin-top: 8px;"><a style="padding: 0; margin: 0;">
+            <span>Search</span>
+          </a></button>
+        
+    </div>
+
+    <!-- Product Grid -->
+    <div id="product-container">
+        <!-- Products will be displayed here -->
+    </div>
+
+    <!-- Cart Section -->
+    <div id="cart-container" class="cart">
+        <h2>Cart</h2>
+        <div id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </div>
+        <div class="price-details">
+            <p>Total MRP: <span id="total-mrp">₹0</span></p>
+            <p>Coupon Discount: <span id="coupon-discount">₹0</span></p>
+            <p>Platform Fee: <span id="plat-fee">₹0</span></p>
+            <p>Shipping Charges: <span id="ship-ch">₹0</span></p>
+            <p>Total Amount: <span id="total-amount">₹0</span></p>
+            <button id="place-order">Place Order</button>
+        </div>
+    </div>
+</div>
+
+    <!-- Added to cart notification -->
+    <div id="cart-notification">
+        Item added to cart!
+    </div>
+
+    <!-- Inline JavaScript -->
+    <script src="./main.js"></script>
+
+</body>
+</html>
